@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Smart Contract Wallet
 
-## Getting Started
+This is a simple implementation of a smart contract wallet with basic functionalities. This contains functions to get the balance and address and transfer money from one wallet to another wallet
 
-First, run the development server:
+## hardhat configuration
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+To run the local node run the following command
+
+```shell
+npx hardhat node
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> note that this will create a different set of wallets every single time. So the wallet has to be configured before every use. to get around this use some other test nets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To run the test scripts run the following command
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```shell
+npx hardhat test
+```
 
-## Learn More
+To run the deploy script in local node
 
-To learn more about Next.js, take a look at the following resources:
+```shell
+npx hardhat run scripts/deploy.ts --network localhost
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## frontend configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project comes with a frontend interface written with next js and shad cn ui, kindly refer to the `client` folder for frontend.
 
-## Deploy on Vercel
+To run the frontend, enter the following commands
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm i
+npm run dev
+```
