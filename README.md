@@ -13,7 +13,6 @@ To run the local node run the following command
 npx hardhat node
 ```
 
-> note that this will create a different set of wallets every single time. So the wallet has to be configured before every use. to get around this use some other test nets
 
 To run the test scripts run the following command
 
