@@ -1,6 +1,9 @@
-# Smart Contract Wallet
+# Advance_EVM_Challenge-4
+# Creating a Smart Wallet
 
-This is a simple implementation of a smart contract wallet with basic functionalities. This contains functions to get the balance and address and transfer money from one wallet to another wallet
+This is a simple implementation of a smart contract wallet with basic functionalities. 
+
+This contains functions to get the balance and address and transfer money from one wallet to another wallet
 
 ## hardhat configuration
 
@@ -26,11 +29,11 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 ## frontend configuration
 
-This project comes with a frontend interface written with next js and shad cn ui, kindly refer to the `client` folder for frontend.
-
 To run the frontend, enter the following commands
 
 ```shell
 npm i
 npm run dev
 ```
+
+### Author : Yaswanth Sirigiri
